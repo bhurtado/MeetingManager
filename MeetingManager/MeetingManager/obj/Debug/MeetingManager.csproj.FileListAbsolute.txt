@@ -1,6 +1,5 @@
-C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\MeetingManager.dll.config
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\MeetingManager.dll
-C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\MeetingManager.pdb
+C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\MeetingManager.dll.config
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\Plugin.Settings.Abstractions.dll

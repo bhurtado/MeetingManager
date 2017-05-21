@@ -24,7 +24,6 @@ C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManag
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\Xamarin.Forms.Platform.dll
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\MeetingManager.pdb
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\MeetingManager.dll.config
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.Android\bin\Debug\FormsViewGroup.dll.mdb

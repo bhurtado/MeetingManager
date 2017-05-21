@@ -1,2 +1,0 @@
-C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager.UWP\MeetingManager.UWP.csproj;arm
-C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\MeetingManager.csproj;neutral

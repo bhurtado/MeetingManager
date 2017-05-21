@@ -2199,6 +2199,15 @@
           }
         }
       },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.8": {
         "type": "package",
         "compile": {
@@ -4536,6 +4545,15 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.8": {
@@ -6916,6 +6934,15 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.8": {
         "type": "package",
         "compile": {
@@ -9262,6 +9289,15 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.8": {
@@ -11651,6 +11687,15 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.8": {
         "type": "package",
         "compile": {
@@ -13997,6 +14042,15 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.8": {
@@ -16384,6 +16438,15 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.8": {
@@ -22822,6 +22885,20 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "WindowsAzure.Messaging.Managed/0.1.7.9": {
+      "sha512": "9g7MVL7Odl5qwG9TSsaab/MKFXdeLitrvbbRAO7xWk4CGeD1j17GPeUsuufO8VY5+GAcCQjJcrM6fU+y/eLCBg==",
+      "type": "package",
+      "path": "windowsazure.messaging.managed/0.1.7.9",
+      "files": [
+        "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.pri",
+        "lib/windowsphone8/Microsoft.WindowsAzure.Messaging.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Messaging.Managed.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Messaging.Managed.pri",
+        "windowsazure.messaging.managed.0.1.7.9.nupkg.sha512",
+        "windowsazure.messaging.managed.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/2.5.8": {
       "sha512": "iqGTobVkbZf6b0weWwk6ex3bnp8WJ4ipvfV4rT9I47I+qCf1VTffTYFtFwSRU3W53xSl9WtOW6n5vbgEpNJdaw==",
       "type": "package",
@@ -23044,6 +23121,7 @@
     "": [
       "Microsoft.Azure.Mobile.Client >= 3.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
+      "WindowsAzure.Messaging.Managed >= 0.1.7.9",
       "Xam.Plugins.Settings >= 2.5.8",
       "Xamarin.Forms >= 2.3.4.224"
     ],
@@ -23072,6 +23150,7 @@
     "dependencies": {
       "Microsoft.Azure.Mobile.Client": "3.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+      "WindowsAzure.Messaging.Managed": "0.1.7.9",
       "Xam.Plugins.Settings": "2.5.8",
       "Xamarin.Forms": "2.3.4.224"
     },
