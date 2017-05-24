@@ -1,7 +1,6 @@
 ﻿using MeetingManager.Helpers;
 using MeetingManager.Pages;
-using MeetingManager.Services;
-using System;
+using MeetingManager.Services.Interfaces;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -11,25 +10,22 @@ namespace MeetingManager.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        AzureService azureService;
-        INavigation navigation;
+        private readonly IAppServices _appServices;
 
         ICommand loginCommand;
         public ICommand LoginCommand =>
             loginCommand ?? (loginCommand = new Command(async () => await ExecuteLoginCommandAsync()));
 
-        public LoginViewModel(INavigation nav)
+        public LoginViewModel()
         {
-            azureService = DependencyService.Get<AzureService>();
-            navigation = nav;
-
+            _appServices = DependencyService.Get<IAppServices>();
             Title = "Social Login";
         }
 
         public Task<bool> LoginAsync()
         {
             if (Settings.IsLoggedIn) return Task.FromResult(true);
-            return azureService.LoginAsync();
+            return _appServices.AzureService.LoginAsync();
         }
 
         private async Task ExecuteLoginCommandAsync()
@@ -37,22 +33,15 @@ namespace MeetingManager.ViewModels
             if (IsBusy || !(await LoginAsync())) return;
 
             var mainPage = new MainPage();
-            await navigation.PushAsync(mainPage);
+            await _appServices.NavService.NavigationToViewModel<MainViewModel, object>(null);
 
-            RemovePageFromStack();
+            await _appServices.NavService.RemoveFromStack<LoginPage>();
         }
 
-        private void RemovePageFromStack()
+        public async override Task Init()
         {
-            var loginPage = navigation.NavigationStack.FirstOrDefault(p => p is LoginPage);
-            if (loginPage == null) return;
-
-            navigation.RemovePage(loginPage);
-        }
-
-        public override Task Init()
-        {
-            throw new NotImplementedException();
+            // TODO: 
+            await Task.Factory.StartNew(() => { });
         }
     }
 }

@@ -1,4 +1,4 @@
-# MeetingManager
+﻿# MeetingManager
 Projeto de gerenciamento de reserva de salas, para reuniões e encontros. Realizado como projeto da maratona xamarin intermediaria.
 
 <h1>Fase 1 - Integração rede social com Azure (Facebook)</h1>
@@ -13,7 +13,13 @@ Configurado um novo serviço no azure de push notification "Hub", configuração
 Adicionado ao portable a classe estatica Configuration.cs - para definir a configuração de hub notification para as diferentes plataformas.
 
 <h1>Fase 3 - Serviço de Navegação entre ViewModels</h1>
-Todo:
+Implementado serviço de navegação da aplicação.
+
+Agrupado serviços em um UnitOfWork. AppServices.cs
+
+Registrada as viewmodels no inicio so App.cs
+
+Obs: Implementação baseada no livro: Mastering Xamarin UI Development (https://www.packtpub.com/application-development/mastering-xamarin-ui-development)
 <h1>Fase 4 - Cadastro de Salas e Horários disponíveis</h1>
 Todo:
 <h1>Fase 5 - Regra para agendamento de salas</h1>

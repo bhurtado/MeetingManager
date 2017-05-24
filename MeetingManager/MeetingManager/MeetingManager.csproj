@@ -47,7 +47,11 @@
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AppServices.cs" />
     <Compile Include="Services\AzureService.cs" />
+    <Compile Include="Services\Interfaces\IAppServices.cs" />
+    <Compile Include="Services\Interfaces\INavService.cs" />
+    <Compile Include="Services\NavService.cs" />
     <Compile Include="Social\Authentications\IAuthentication.cs" />
     <Compile Include="Social\Facebook\Models\User.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />

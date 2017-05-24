@@ -1,9 +1,4 @@
 ﻿using MeetingManager.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,10 +8,11 @@ namespace MeetingManager.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        public LoginViewModel ViewModel => BindingContext as LoginViewModel;
         public LoginPage()
         {
             InitializeComponent();
-            BindingContext = new LoginViewModel(Navigation);
+            BindingContext = new LoginViewModel();
         }
     }
 }

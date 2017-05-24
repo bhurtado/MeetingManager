@@ -3,13 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MeetingManager"
              x:Class="MeetingManager.MainPage"
+             BackgroundColor="Black"
              Title="{Binding Title}">
-    <ScrollView>
-        <StackLayout Padding="60" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-            <Label Text="Id do usuário" TextColor="Black" FontSize="Small" />
-            <Label Text="{Binding UserId}" TextColor="Gray" FontSize="Medium" />
-            <Label Text="Token do provedor" TextColor="Black" FontSize="Small" />
-            <Label Text="{Binding Token}" TextColor="Gray" FontSize="Medium" />
-        </StackLayout>
-    </ScrollView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="CONFIG"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout VerticalOptions="Center" Spacing="20">
+        <Label 
+			Text="Seja Bem-Vindo"
+			TextColor="White"
+			FontSize="30" 
+			FontAttributes="Bold"  
+			HorizontalOptions="Center" />
+        <Button Text="Reservar Sala" TextColor="White" BackgroundColor="#1dabf0"  />
+        <Button Text="Listar Reservas" TextColor="White" BackgroundColor="#1dabf0"  />
+    </StackLayout>
 </ContentPage>
