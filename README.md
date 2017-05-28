@@ -9,9 +9,13 @@ Resgatado em <a href="developers.facebook.com">Facebook Developers</a> o Api ID 
 
 <img src="imagens/LoginPage.png" />
 <h1>Fase 2 - Push notification </h1>
+
 Configurado um novo serviço no azure de push notification "Hub", configuração para Windows(WNS) e Google(GCM)
 
 Adicionado ao portable a classe estatica Configuration.cs - para definir a configuração de hub notification para as diferentes plataformas.
+
+
+<img src="imagens/PushNotification.png" />
 
 <h1>Fase 3 - Serviço de Navegação entre ViewModels</h1>
 Implementado serviço de navegação da aplicação.
@@ -21,6 +25,9 @@ Agrupado serviços em um UnitOfWork. (AppServices.cs)
 Registrada as viewmodels no inicio do App.cs
 
 Obs: Implementação baseada no livro: Mastering Xamarin UI Development (https://www.packtpub.com/application-development/mastering-xamarin-ui-development)
+
+
+<img src="imagens/MainPage.png" />
 <h1>Fase 4 - Cadastro e Gerenciamento de Salas</h1>
 Adicionado um banco de dado em memória, para ser utilizado pelo repositório.
 
