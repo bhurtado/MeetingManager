@@ -20,8 +20,12 @@ Agrupado serviços em um UnitOfWork. AppServices.cs
 Registrada as viewmodels no inicio so App.cs
 
 Obs: Implementação baseada no livro: Mastering Xamarin UI Development (https://www.packtpub.com/application-development/mastering-xamarin-ui-development)
-<h1>Fase 4 - Cadastro de Salas e Horários disponíveis</h1>
-Todo:
-<h1>Fase 5 - Regra para agendamento de salas</h1>
+<h1>Fase 4 - Cadastro e Gerenciamento de Salas</h1>
+Adicionado um banco de dado em memória, para ser utilizado pelo repositório.
+
+Configurado um Custom Enum Drop Down List para cadastro das salas.
+
+Finalizado o salvamento e a edição das salas.
+<h1>Fase 5 - Regra para Reserva de salas</h1>
 Todo:
 <h1>Fase 6 (final) - Tela de configuração. "Aceito receber notificações"</h1>

@@ -1,5 +1,4 @@
 ﻿using MeetingManager.ViewModels;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,6 +12,12 @@ namespace MeetingManager.Pages
         {
             InitializeComponent();
             BindingContext = new LoginViewModel();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ViewModel.Init();
         }
     }
 }

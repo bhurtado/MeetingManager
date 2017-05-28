@@ -12,10 +12,10 @@ namespace MeetingManager
             BindingContext = new MainViewModel();
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-            await ViewModel.Init();
+            ViewModel.Init();
         }
     }
 }

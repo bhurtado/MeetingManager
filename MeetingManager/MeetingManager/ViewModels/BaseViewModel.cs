@@ -1,13 +1,17 @@
-﻿using System;
+﻿using MeetingManager.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace MeetingManager.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {
+        protected readonly IAppServices AppServices;        
+
         private string _title;
         public string Title
         {
@@ -23,6 +27,11 @@ namespace MeetingManager.ViewModels
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public BaseViewModel()
+        {
+            AppServices = DependencyService.Get<IAppServices>();
+        }
 
         public abstract Task Init();
 

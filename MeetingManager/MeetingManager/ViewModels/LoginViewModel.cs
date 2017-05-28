@@ -1,7 +1,5 @@
 ﻿using MeetingManager.Helpers;
 using MeetingManager.Pages;
-using MeetingManager.Services.Interfaces;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -9,23 +7,15 @@ using Xamarin.Forms;
 namespace MeetingManager.ViewModels
 {
     public class LoginViewModel : BaseViewModel
-    {
-        private readonly IAppServices _appServices;
-
+    {        
         ICommand loginCommand;
         public ICommand LoginCommand =>
-            loginCommand ?? (loginCommand = new Command(async () => await ExecuteLoginCommandAsync()));
-
-        public LoginViewModel()
-        {
-            _appServices = DependencyService.Get<IAppServices>();
-            Title = "Social Login";
-        }
+            loginCommand ?? (loginCommand = new Command(async () => await ExecuteLoginCommandAsync()));        
 
         public Task<bool> LoginAsync()
         {
             if (Settings.IsLoggedIn) return Task.FromResult(true);
-            return _appServices.AzureService.LoginAsync();
+            return AppServices.AzureService.LoginAsync();
         }
 
         private async Task ExecuteLoginCommandAsync()
@@ -33,15 +23,15 @@ namespace MeetingManager.ViewModels
             if (IsBusy || !(await LoginAsync())) return;
 
             var mainPage = new MainPage();
-            await _appServices.NavService.NavigationToViewModel<MainViewModel, object>(null);
+            await AppServices.NavService.NavigationToViewModel<MainViewModel, object>(null);
 
-            await _appServices.NavService.RemoveFromStack<LoginPage>();
+            await AppServices.NavService.RemoveFromStack<LoginPage>();
         }
 
-        public async override Task Init()
+        public override Task Init()
         {
-            // TODO: 
-            await Task.Factory.StartNew(() => { });
+            Title = "Login";
+            return Task.FromResult<object>(null);
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿
 using MeetingManager.Pages;
+using MeetingManager.Salas.Pages;
+using MeetingManager.Salas.ViewModels;
 using MeetingManager.Services;
 using MeetingManager.Services.Interfaces;
 using MeetingManager.ViewModels;
@@ -26,6 +28,9 @@ namespace MeetingManager
 
             navService.RegisterViewMapping(typeof(MainViewModel), typeof(MainPage));
             navService.RegisterViewMapping(typeof(LoginViewModel), typeof(LoginPage));
+            navService.RegisterViewMapping(typeof(ListagemViewModel), typeof(ListagemPage));
+            navService.RegisterViewMapping(typeof(ManutencaoViewModel), typeof(ManutencaoPage));
+            navService.RegisterViewMapping(typeof(ReservarViewModel), typeof(ReservarPage));
         }
 
         protected override void OnSleep() { }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeetingManager.Salas.Pages.ListagemPage"
+             BackgroundColor="SandyBrown"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cadastrar" Command="{Binding Cadastrar}" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <ListView  SelectedItem="{Binding SalaSelecionada, Mode=TwoWay}"
+			   ItemsSource="{Binding Salas}"
+			   ItemSelected="OnSalaSelecionada">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Nome}" Detail="{Binding Tipo}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

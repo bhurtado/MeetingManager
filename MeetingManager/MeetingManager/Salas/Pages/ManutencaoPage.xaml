@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MeetingManager.Salas.Pages.ManutencaoPage"
+            xmlns:controls="clr-namespace:MeetingManager.Custom.Controls"
+	        xmlns:enums="clr-namespace:MeetingManager.Models.Enums"
+            BackgroundColor="SandyBrown"
+            Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Command="{Binding Salvar}" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <TableView Intent="Form">
+        <TableRoot>
+            <TableSection  Title="Informações">
+                <EntryCell Label="Nome:" Text="{Binding Nome}" Keyboard="Text"/>
+                <EntryCell Label="Descricao:" Text="{Binding Descricao}" Keyboard="Text"/>
+                <TextCell Text="Tipo" />
+                <ViewCell>
+                    <StackLayout>
+                        <controls:EnumDropDownList x:TypeArguments="enums:SalaTipo" SelectedItem="{Binding Tipo, Mode=TwoWay}"></controls:EnumDropDownList>
+                        <Label Text="{Binding SelectedEnum}"></Label>
+                    </StackLayout>
+                </ViewCell>
+            </TableSection>
+            <TableSection Title="Recursos">
+                <SwitchCell Text="Tem Projetor?" On="{Binding IsProjetor}" />
+                <SwitchCell Text="Tem Telefone?" On="{Binding IsTelefone}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
