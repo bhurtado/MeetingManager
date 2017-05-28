@@ -7,6 +7,7 @@ Resgatado em <a href="developers.facebook.com">Facebook Developers</a> o Api ID 
   https://paulokinjomaratonaxamarin.azurewebsites.net/.auth/login/facebook/callback
 1.1 - Adicionado Nuget Package - Microsoft.WindowsAzure.Mobile; Newtonsoft.Json;Xam.Plugins.Settings.
 
+<img src="imagens/LoginPage.png" />
 <h1>Fase 2 - Push notification </h1>
 Configurado um novo serviço no azure de push notification "Hub", configuração para Windows(WNS) e Google(GCM)
 
