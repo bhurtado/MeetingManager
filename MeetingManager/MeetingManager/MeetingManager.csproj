@@ -51,9 +51,13 @@
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salas\Models\Reserva.cs" />
     <Compile Include="Salas\Models\Sala.cs" />
     <Compile Include="Salas\Pages\ListagemPage.xaml.cs">
       <DependentUpon>ListagemPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Salas\Pages\ListagemReservasPage.xaml.cs">
+      <DependentUpon>ListagemReservasPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Salas\Pages\ManutencaoPage.xaml.cs">
       <DependentUpon>ManutencaoPage.xaml</DependentUpon>
@@ -61,13 +65,19 @@
     <Compile Include="Salas\Pages\ReservarPage.xaml.cs">
       <DependentUpon>ReservarPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Salas\Repositories\Interfaces\IReservaRepository.cs" />
     <Compile Include="Salas\Repositories\Interfaces\ISalaRepository.cs" />
+    <Compile Include="Salas\Repositories\ReservaRepository.cs" />
     <Compile Include="Salas\Repositories\SalaRepository.cs" />
+    <Compile Include="Salas\Services\Interfaces\IReservasService.cs" />
     <Compile Include="Salas\Services\Interfaces\ISalaService.cs" />
+    <Compile Include="Salas\Services\ReservasService.cs" />
     <Compile Include="Salas\Services\SalaService.cs" />
+    <Compile Include="Salas\ViewModels\ListagemReservasViewModel.cs" />
     <Compile Include="Salas\ViewModels\ListagemViewModel.cs" />
     <Compile Include="Salas\ViewModels\ReservarViewModel.cs" />
     <Compile Include="Salas\ViewModels\ManutencaoViewModel.cs" />
+    <Compile Include="Salas\ViewModels\ReservaViewModel.cs" />
     <Compile Include="Services\AppServices.cs" />
     <Compile Include="Services\AzureService.cs" />
     <Compile Include="Services\Interfaces\IAppServices.cs" />
@@ -148,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Salas\Pages\ListagemPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Salas\Pages\ListagemReservasPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

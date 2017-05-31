@@ -26,7 +26,7 @@ namespace MeetingManager.Salas.ViewModels
 
         public ListagemViewModel()
         {
-            Salas = new ObservableCollection<ManutencaoViewModel>(InMemoryData.Salas.MapListTo());
+            Salas = new ObservableCollection<ManutencaoViewModel>(InMemoryData.Salas.MapToManutencaoViewModelList());
 
             Cadastrar = new Command(async () => await SalasCadastrarNavegar());
             Editar = new Command<ManutencaoViewModel>(async vm => await SalasEditarNavegar(vm));

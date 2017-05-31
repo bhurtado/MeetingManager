@@ -7,5 +7,6 @@ namespace MeetingManager.Services.Interfaces
         INavService NavService { get; }
         AzureService AzureService { get; }
         ISalaService Salas { get; }
+        IReservaService Reservas { get; }
     }
 }

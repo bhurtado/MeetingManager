@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MeetingManager"
              x:Class="MeetingManager.MainPage"
-             BackgroundColor="SandyBrown"
+             BackgroundColor="MediumSlateBlue"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="CONFIG"/>
@@ -17,7 +17,7 @@
 			FontAttributes="Bold"  
 			HorizontalOptions="Center" />
         <Button Text="Gerenciar Salas" TextColor="White" BackgroundColor="#1dabf0" Command="{Binding GerenciarSalas}" />
-        <Button Text="Reservar Sala" TextColor="White" BackgroundColor="#1dabf0"  />
-        <Button Text="Listar Reservas" TextColor="White" BackgroundColor="#1dabf0"  />
+        <Button Text="Reservar Salas" TextColor="White" BackgroundColor="#1dabf0" Command="{Binding ReservarSalas}" />
+        <Button Text="Listar Reservas" TextColor="White" BackgroundColor="#1dabf0" Command="{Binding ListarReservas}" />
     </StackLayout>
 </ContentPage>

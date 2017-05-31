@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MeetingManager.Salas.Pages.ListagemPage"
-             BackgroundColor="SandyBrown"
+             BackgroundColor="MediumSlateBlue"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cadastrar" Command="{Binding Cadastrar}" Order="Primary"/>
@@ -12,7 +12,7 @@
 			   ItemSelected="OnSalaSelecionada">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Nome}" Detail="{Binding Tipo}"/>
+                <TextCell TextColor="White" Text="{Binding Nome}" Detail="{Binding Tipo}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

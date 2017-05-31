@@ -1,9 +1,11 @@
 ﻿using MeetingManager.Models.Enums;
 using MeetingManager.Models.Mappings;
+using MeetingManager.Salas.Pages;
 using MeetingManager.ViewModels;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System;
 
 namespace MeetingManager.Salas.ViewModels
 {
@@ -44,6 +46,21 @@ namespace MeetingManager.Salas.ViewModels
             set { SetValue(ref _tipo, value); }
         }
 
+        private string _horaInicial;
+        public string HoraInicial
+        {
+            get { return _horaInicial; }
+            set { SetValue(ref _horaInicial, value); }
+        }
+
+        private string _horaFinal;
+        public string HoraFinal
+        {
+            get { return _horaFinal; }
+            set { SetValue(ref _horaFinal, value); }
+        }
+
+        public string Horario { get { return $"Tipo: {Tipo} {_horaInicial} ~ {_horaFinal}"; } }
 
         public ICommand Salvar { get; }
 
@@ -55,8 +72,10 @@ namespace MeetingManager.Salas.ViewModels
         private async Task SalvarAsync()
         {
             var sala = this.MapToSala();
-            AppServices.Salas.Cadastrar(sala);
+            AppServices.Salas.Salvar(sala);
+            await AppServices.NavService.RemoveFromStack<ListagemPage>();
             await AppServices.NavService.NavigationToViewModel<ListagemViewModel, object>(null);
+            await AppServices.NavService.RemoveFromStack<ManutencaoPage>();
         }
 
         public override Task Init(ManutencaoViewModel viewModel)
@@ -70,6 +89,8 @@ namespace MeetingManager.Salas.ViewModels
                 IsProjetor = viewModel.IsProjetor;
                 IsTelefone = viewModel.IsTelefone;
                 Tipo = viewModel.Tipo;
+                HoraInicial = viewModel.HoraInicial;
+                HoraFinal = viewModel.HoraFinal;
             }
             return Task.FromResult<object>(null);
         }

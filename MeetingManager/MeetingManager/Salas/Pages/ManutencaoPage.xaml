@@ -4,7 +4,7 @@
             x:Class="MeetingManager.Salas.Pages.ManutencaoPage"
             xmlns:controls="clr-namespace:MeetingManager.Custom.Controls"
 	        xmlns:enums="clr-namespace:MeetingManager.Models.Enums"
-            BackgroundColor="SandyBrown"
+            BackgroundColor="MediumSlateBlue"
             Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Salvar" Command="{Binding Salvar}" Order="Primary"/>
@@ -21,6 +21,9 @@
                         <Label Text="{Binding SelectedEnum}"></Label>
                     </StackLayout>
                 </ViewCell>
+                <!--StringFormat={}{0:hh}:{0:mm},-->
+                <EntryCell Label="Inicio" Text="{Binding HoraInicial}" />
+                <EntryCell Label="Fim" Text="{Binding HoraFinal}" />
             </TableSection>
             <TableSection Title="Recursos">
                 <SwitchCell Text="Tem Projetor?" On="{Binding IsProjetor}" />

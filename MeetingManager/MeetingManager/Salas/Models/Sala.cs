@@ -1,5 +1,5 @@
-﻿using System;
-using MeetingManager.Models.Enums;
+﻿using MeetingManager.Models.Enums;
+using System;
 
 namespace MeetingManager.Salas.Models
 {
@@ -10,5 +10,9 @@ namespace MeetingManager.Salas.Models
         public bool IsProjetor { get; internal set; }
         public bool IsTelefone { get; internal set; }
         public SalaTipo Tipo { get; internal set; }
+        public string HoraInicial { get; set; }
+        public string HoraFinal { get; set; }
+
+        public string Detail { get { return $"{HoraInicial} ~ {HoraFinal}"; } }
     }
 }

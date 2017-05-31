@@ -17,6 +17,6 @@ namespace MeetingManager.Salas.Services
             _repository = DependencyService.Get<ISalaRepository>();
         }
 
-        public bool Cadastrar(Sala sala) => _repository.Salvar(sala);
+        public bool Salvar(Sala sala) => _repository.Salvar(sala);
     }
 }

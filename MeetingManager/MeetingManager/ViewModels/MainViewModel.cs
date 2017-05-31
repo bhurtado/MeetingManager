@@ -28,13 +28,21 @@ namespace MeetingManager.ViewModels
         }
 
         public ICommand GerenciarSalas { get; }
+        public ICommand ReservarSalas { get; }
+        public ICommand ListarReservas { get; }
 
         public MainViewModel()
         {
             GerenciarSalas = new Command(SalasListagemNavegar);
+            ReservarSalas = new Command(SalasReservarNavegar);
+            ListarReservas = new Command(SalasListarReservasNavegar);
         }
 
-        private void SalasListagemNavegar() => AppServices.NavService.NavigationToViewModel<ListagemViewModel, List<ManutencaoViewModel>>(InMemoryData.Salas.MapListTo());
+        private void SalasListarReservasNavegar() => AppServices.NavService.NavigationToViewModel<ListagemReservasViewModel, object>(null);
+
+        private void SalasReservarNavegar() => AppServices.NavService.NavigationToViewModel<ReservarViewModel, object>(null);
+
+        private void SalasListagemNavegar() => AppServices.NavService.NavigationToViewModel<ListagemViewModel, object>(null);
 
         public async override Task Init()
         {

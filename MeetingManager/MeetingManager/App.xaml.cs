@@ -29,6 +29,7 @@ namespace MeetingManager
             navService.RegisterViewMapping(typeof(MainViewModel), typeof(MainPage));
             navService.RegisterViewMapping(typeof(LoginViewModel), typeof(LoginPage));
             navService.RegisterViewMapping(typeof(ListagemViewModel), typeof(ListagemPage));
+            navService.RegisterViewMapping(typeof(ListagemReservasViewModel), typeof(ListagemReservasPage));
             navService.RegisterViewMapping(typeof(ManutencaoViewModel), typeof(ManutencaoPage));
             navService.RegisterViewMapping(typeof(ReservarViewModel), typeof(ReservarPage));
         }

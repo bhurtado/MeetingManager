@@ -16,13 +16,14 @@ namespace MeetingManager.Salas.Repositories
             if (salaAntiga == null)
             {
                 InMemoryData.Salas.Add(sala);
-                
             } else
             {
                 salaAntiga.Descricao = sala.Descricao;
                 salaAntiga.IsProjetor = sala.IsProjetor;
                 salaAntiga.IsTelefone = sala.IsTelefone;
                 salaAntiga.Tipo = sala.Tipo;
+                salaAntiga.HoraInicial = sala.HoraInicial;
+                salaAntiga.HoraFinal = sala.HoraFinal;
             }
             return true;
         }

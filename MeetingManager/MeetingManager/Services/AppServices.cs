@@ -14,5 +14,7 @@ namespace MeetingManager.Services
         public AzureService AzureService => DependencyService.Get<AzureService>();
 
         public ISalaService Salas => DependencyService.Get<ISalaService>();
+
+        public IReservaService Reservas => DependencyService.Get<IReservaService>();
     }
 }

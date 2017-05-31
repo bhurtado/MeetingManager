@@ -14,7 +14,9 @@ namespace MeetingManager.Models.Mappings
                 Descricao = viewModel.Descricao,
                 IsProjetor = viewModel.IsProjetor,
                 IsTelefone = viewModel.IsTelefone,
-                Tipo = viewModel.Tipo
+                Tipo = viewModel.Tipo,
+                HoraInicial = viewModel.HoraInicial,
+                HoraFinal = viewModel.HoraFinal
             };
         }
 
@@ -26,11 +28,13 @@ namespace MeetingManager.Models.Mappings
                 Descricao = model.Descricao,
                 IsProjetor = model.IsProjetor,
                 IsTelefone = model.IsTelefone,
-                Tipo = model.Tipo
+                Tipo = model.Tipo,
+                HoraInicial = model.HoraInicial,
+                HoraFinal = model.HoraFinal
             };
         }
 
-        public static List<ManutencaoViewModel> MapListTo(this List<Sala> salas)
+        public static List<ManutencaoViewModel> MapToManutencaoViewModelList(this List<Sala> salas)
         {
             var list = new List<ManutencaoViewModel>();
 
@@ -40,6 +44,38 @@ namespace MeetingManager.Models.Mappings
             }
 
             return list;
+        }
+
+        public static List<ReservaViewModel> MapToReservaViewModelList(this List<Reserva> reservas)
+        {
+            var list = new List<ReservaViewModel>();
+
+            foreach (var reserva in reservas)
+            {
+                list.Add(reserva.MapToReservaViewModel());
+            }
+
+            return list;
+        }
+
+        public static ReservaViewModel MapToReservaViewModel(this Reserva model)
+        {
+            return new ReservaViewModel
+            {
+                Sala = model.Sala,
+                Data = model.Data,
+                Duracao = model.Duracao,
+            };
+        }
+
+        public static Reserva MapToReserva(this ReservaViewModel viewModel)
+        {
+            return new Reserva
+            {
+                Sala = viewModel.Sala,
+                Duracao = viewModel.Duracao,
+                Data = viewModel.Data
+            };
         }
     }
 }

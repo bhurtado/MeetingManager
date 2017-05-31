@@ -34,5 +34,6 @@ C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManag
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.Salas.Pages.ReservarPage.xaml.g.cs
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.Salas.Pages.ManutencaoPage.xaml.g.cs
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.Salas.Pages.ListagemPage.xaml.g.cs
+C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.Salas.Pages.ListagemReservasPage.xaml.g.cs
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.dll
 C:\Users\Paulo\documents\visual studio 2017\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.pdb

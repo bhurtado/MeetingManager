@@ -12,12 +12,12 @@ namespace MeetingManager.Salas.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManage" +
-        "r\\MeetingManager\\Salas\\Pages\\ReservarSalaPage.xaml")]
-    public partial class ReservarSalaPage : global::Xamarin.Forms.ContentPage {
+        "r\\MeetingManager\\Salas\\Pages\\ListagemReservasPage.xaml")]
+    public partial class ListagemReservasPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ReservarSalaPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ListagemReservasPage));
         }
     }
 }
