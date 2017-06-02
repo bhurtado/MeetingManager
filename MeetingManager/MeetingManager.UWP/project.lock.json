@@ -23128,20 +23128,20 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Paulo\\.nuget\\packages\\": {}
+    "C:\\Users\\paulo.kinjo\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\MeetingManager.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\MeetingManager.UWP.csproj",
       "projectName": "MeetingManager.UWP",
-      "projectPath": "C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\MeetingManager.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\project.json",
+      "projectPath": "C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\MeetingManager.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManager\\MeetingManager\\MeetingManager.csproj": {
-              "projectPath": "C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManager\\MeetingManager\\MeetingManager.csproj"
+            "C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager\\MeetingManager.csproj": {
+              "projectPath": "C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager\\MeetingManager.csproj"
             }
           }
         }

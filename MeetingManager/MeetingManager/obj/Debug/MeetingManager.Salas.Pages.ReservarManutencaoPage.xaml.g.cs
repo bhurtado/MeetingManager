@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MeetingManager {
+namespace MeetingManager.Salas.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager" +
-        "\\App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+        "\\Salas\\Pages\\ReservarManutencaoPage.xaml")]
+    public partial class ReservarManutencaoPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ReservarManutencaoPage));
         }
     }
 }

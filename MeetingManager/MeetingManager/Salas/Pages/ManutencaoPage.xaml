@@ -11,19 +11,26 @@
     </ContentPage.ToolbarItems>
     <TableView Intent="Form">
         <TableRoot>
-            <TableSection  Title="Informações">
-                <EntryCell Label="Nome:" Text="{Binding Nome}" Keyboard="Text"/>
-                <EntryCell Label="Descricao:" Text="{Binding Descricao}" Keyboard="Text"/>
-                <TextCell Text="Tipo" />
+            <TableSection Title="Informações">
+                <EntryCell Label="Nome:" Text="{Binding Nome}" Keyboard="Text" Placeholder="Nome da Sala"/>
+                <EntryCell Label="Descricao:" Text="{Binding Descricao}" Keyboard="Text" Placeholder="Descrição da Sala"/>
+                <TextCell Text="Tipo" Detail="Ex: Reunião, Conferência" />
                 <ViewCell>
                     <StackLayout>
                         <controls:EnumDropDownList x:TypeArguments="enums:SalaTipo" SelectedItem="{Binding Tipo, Mode=TwoWay}"></controls:EnumDropDownList>
                         <Label Text="{Binding SelectedEnum}"></Label>
                     </StackLayout>
                 </ViewCell>
-                <!--StringFormat={}{0:hh}:{0:mm},-->
-                <EntryCell Label="Inicio" Text="{Binding HoraInicial}" />
-                <EntryCell Label="Fim" Text="{Binding HoraFinal}" />
+            </TableSection>
+            <TableSection Title="Disponibilidade?">
+                <ViewCell>
+                    <StackLayout>
+                        <Label Text="Inicio"></Label>
+                        <TimePicker Time="08:00" />
+                        <Label Text="Fim"></Label>
+                        <TimePicker Time="19:00" />
+                    </StackLayout>
+                </ViewCell>
             </TableSection>
             <TableSection Title="Recursos">
                 <SwitchCell Text="Tem Projetor?" On="{Binding IsProjetor}" />

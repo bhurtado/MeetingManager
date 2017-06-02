@@ -11,8 +11,8 @@
 namespace MeetingManager {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Paulo\\documents\\visual studio 2017\\Projects\\MeetingManager\\MeetingManage" +
-        "r\\MeetingManager\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager" +
+        "\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

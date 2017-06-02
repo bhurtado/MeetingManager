@@ -10,7 +10,11 @@ using Xamarin.Forms;
 
 namespace MeetingManager.Salas.ViewModels
 {
-    public class ReservarViewModel : BaseViewModel
+    //public class ReservarManutencaoViewModel : BaseViewModel<>
+    //{
+
+    //}
+        public class ReservarViewModel : BaseViewModel
     {
         public ObservableCollection<Sala> Salas { get; }
 
