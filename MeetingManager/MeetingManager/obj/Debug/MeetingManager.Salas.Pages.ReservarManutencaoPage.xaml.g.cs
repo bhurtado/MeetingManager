@@ -11,8 +11,8 @@
 namespace MeetingManager.Salas.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager" +
-        "\\Salas\\Pages\\ReservarManutencaoPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo\\Documents\\Projects\\MeetingManager\\MeetingManager\\MeetingManager\\Sa" +
+        "las\\Pages\\ReservarManutencaoPage.xaml")]
     public partial class ReservarManutencaoPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

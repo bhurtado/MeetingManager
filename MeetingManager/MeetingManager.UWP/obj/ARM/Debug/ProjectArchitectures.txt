@@ -1,2 +1,2 @@
-C:\Users\paulo.kinjo\Desktop\Xamarin\MeetingManager\MeetingManager\MeetingManager.UWP\MeetingManager.UWP.csproj;arm
-C:\Users\paulo.kinjo\Desktop\Xamarin\MeetingManager\MeetingManager\MeetingManager\MeetingManager.csproj;neutral
+C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager.UWP\MeetingManager.UWP.csproj;arm
+C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\MeetingManager.csproj;neutral

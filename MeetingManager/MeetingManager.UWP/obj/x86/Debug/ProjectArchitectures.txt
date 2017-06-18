@@ -1,0 +1,2 @@
+C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager.UWP\MeetingManager.UWP.csproj;x86
+C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\MeetingManager.csproj;neutral

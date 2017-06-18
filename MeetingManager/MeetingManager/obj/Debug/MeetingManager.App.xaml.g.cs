@@ -11,8 +11,8 @@
 namespace MeetingManager {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo.kinjo\\Desktop\\Xamarin\\MeetingManager\\MeetingManager\\MeetingManager" +
-        "\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\paulo\\Documents\\Projects\\MeetingManager\\MeetingManager\\MeetingManager\\Ap" +
+        "p.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

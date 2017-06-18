@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MeetingManager.Pages.LoginPage"
-             BackgroundColor="MediumSlateBlue"
+             BackgroundColor="LightGray"
              Title="{Binding Title}">
-    <StackLayout VerticalOptions="Center" Spacing="20">
+    <!--<StackLayout VerticalOptions="Center" Spacing="20">
         <Label 
 			Text="Reserva de Salas"
 			TextColor="White"
@@ -21,5 +21,29 @@
 			TextColor="White"
 			BackgroundColor="#1dabf0" 
             Command="{Binding LoginCommand}"/>
+    </StackLayout>-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cadastre-se" Icon="Assets/icons/addUser.png" />
+    </ContentPage.ToolbarItems>
+    <StackLayout VerticalOptions="StartAndExpand" Padding="30" Margin="8">
+
+        <Label Text="Por favor entre as informações abaixo para acessar o aplicativo." />
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="0, 10, 0, 0">
+            <Image Source="Assets/icons/user.png" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="32" WidthRequest="32"/>
+            <Entry Placeholder="usuário" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+            <Image Source="Assets/icons/password.png" VerticalOptions="CenterAndExpand" HeightRequest="32" WidthRequest="32" BackgroundColor="Transparent"/>
+            <Entry Placeholder="senha" IsPassword="true" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <Button Text="Entrar" HorizontalOptions="FillAndExpand" Margin="0, 10, 0, 0"/>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="0,20,0,0">
+            <Button Text="Entrar com Facebook" Image="Assets/icons/facebook.png" HeightRequest="34" TextColor="Black" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Command="{Binding LoginCommand}"/>
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

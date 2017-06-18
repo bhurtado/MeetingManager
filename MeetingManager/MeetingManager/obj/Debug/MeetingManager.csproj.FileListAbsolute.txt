@@ -105,7 +105,6 @@ C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\b
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.csproj.App.config
-C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.csprojResolveAssemblyReference.cache
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.MainPage.xaml.g.cs
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.App.xaml.g.cs
 C:\Users\paulo\Documents\Projects\MeetingManager\MeetingManager\MeetingManager\obj\Debug\MeetingManager.Pages.LoginPage.xaml.g.cs
