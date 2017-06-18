@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Configuration.cs" />
+    <Compile Include="Custom\Controls\Entry\ImageEntryAlignment.cs" />
     <Compile Include="Custom\Controls\EnumDropDownList.cs" />
     <Compile Include="Databases\InMemoryData.cs" />
     <Compile Include="Helpers\Settings.cs" />

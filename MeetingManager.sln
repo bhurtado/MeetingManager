@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.Android", "MeetingManager\MeetingManager.Android\MeetingManager.Android.csproj", "{BBD2DB45-9B31-4AA4-9E22-099D4C210292}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager", "MeetingManager\MeetingManager\MeetingManager.csproj", "{CB48572A-99AC-4CCC-ABC8-0842F101CF9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.UWP", "MeetingManager\MeetingManager.UWP\MeetingManager.UWP.csproj", "{6192428E-B4AE-493F-960B-C3D1172F464D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingManager.iOS", "MeetingManager\MeetingManager.iOS\MeetingManager.iOS.csproj", "{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,38 +217,6 @@ Global
 		{6192428E-B4AE-493F-960B-C3D1172F464D}.Release|x86.ActiveCfg = Release|x86
 		{6192428E-B4AE-493F-960B-C3D1172F464D}.Release|x86.Build.0 = Release|x86
 		{6192428E-B4AE-493F-960B-C3D1172F464D}.Release|x86.Deploy.0 = Release|x86
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|x64.ActiveCfg = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Ad-Hoc|x86.ActiveCfg = Ad-Hoc|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|ARM.ActiveCfg = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|x64.ActiveCfg = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.AppStore|x86.ActiveCfg = AppStore|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|ARM.ActiveCfg = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|iPhone.Build.0 = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|x64.ActiveCfg = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Debug|x86.ActiveCfg = Debug|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|ARM.ActiveCfg = Release|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|iPhone.ActiveCfg = Release|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|iPhone.Build.0 = Release|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|x64.ActiveCfg = Release|iPhone
-		{CFC1C2B8-B566-4FF7-8FBA-897DB04B9350}.Release|x86.ActiveCfg = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
